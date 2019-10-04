@@ -12,13 +12,7 @@ const image = require('./controllers/image')
 
 const db = knex({
   client: config.client,
-  connection: {
-    host: config.host,
-    port: config.port,
-    user: config.user,
-    password: config.password,
-    database: config.database
-  }
+  connection: config.
 })
 
 const app = express()
